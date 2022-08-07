@@ -12,10 +12,13 @@ Task("Define-Project")
 
     info.AddApplicationProjects("TF3.YarhlPlugin.YakuzaCommon");
     info.AddApplicationProjects("TF3.YarhlPlugin.YakuzaKiwami2");
+    info.AddApplicationProjects("TF3.YarhlPlugin.YakuzaKenzan");
     info.AddLibraryProjects("TF3.YarhlPlugin.YakuzaCommon");
     info.AddLibraryProjects("TF3.YarhlPlugin.YakuzaKiwami2");
+    info.AddLibraryProjects("TF3.YarhlPlugin.YakuzaKenzan");
     info.AddTestProjects("TF3.Tests.Yakuza");
     info.AddTestProjects("TF3.Tests.YakuzaKiwami2");
+    info.AddTestProjects("TF3.Tests.YakuzaKenzan");
 });
 
 Task("Default")

@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D126E90E-C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FontSpacingEditor", "Apps\FontSpacingEditor\FontSpacingEditor.csproj", "{05E711F1-FFA7-427B-9F59-4B2226FF013D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TF3.YarhlPlugin.YakuzaKenzan", "TF3.YarhlPlugin.YakuzaKenzan\TF3.YarhlPlugin.YakuzaKenzan.csproj", "{E16CBF41-6B31-4CB2-B839-C7F7CA936305}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TF3.Tests.YakuzaKenzan", "TF3.Tests.YakuzaKenzan\TF3.Tests.YakuzaKenzan.csproj", "{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,30 @@ Global
 		{05E711F1-FFA7-427B-9F59-4B2226FF013D}.Release|x64.Build.0 = Release|Any CPU
 		{05E711F1-FFA7-427B-9F59-4B2226FF013D}.Release|x86.ActiveCfg = Release|Any CPU
 		{05E711F1-FFA7-427B-9F59-4B2226FF013D}.Release|x86.Build.0 = Release|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Debug|x64.Build.0 = Debug|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Debug|x86.Build.0 = Debug|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Release|x64.ActiveCfg = Release|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Release|x64.Build.0 = Release|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Release|x86.ActiveCfg = Release|Any CPU
+		{E16CBF41-6B31-4CB2-B839-C7F7CA936305}.Release|x86.Build.0 = Release|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Debug|x64.Build.0 = Debug|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Debug|x86.Build.0 = Debug|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Release|x64.ActiveCfg = Release|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Release|x64.Build.0 = Release|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{10A1ABA8-289C-4E9E-BF57-27A0A028A4DB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
