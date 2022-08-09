@@ -20,11 +20,13 @@
 namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
 {
     using System;
+    using System.Collections.Generic;
     using System.IO;
     using System.Linq;
-    using System.Collections.Generic;
     using System.Text;
+    using TF3.YarhlPlugin.YakuzaKenzan.Enums;
     using TF3.YarhlPlugin.YakuzaKenzan.Formats;
+    using TF3.YarhlPlugin.YakuzaKenzan.Types;
     using Yarhl.FileFormat;
     using Yarhl.IO;
 
@@ -56,10 +58,9 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
                 Endianness = EndiannessMode.BigEndian,
             };
 
-            List<uint> textOffsets = new List<uint>();
-            List<int> textTalkerIndices = new List<int>();
+            List<uint> msgStringOffsets = new List<uint>();
 
-            List<string> textStrings = new List<string>();
+            List<MsgFileString> msgStrings = new List<MsgFileString>();
             List<string> talkerStrings = new List<string>();
 
             reader.Stream.Seek(0x10);
@@ -70,7 +71,7 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
             for (int i = 0; i < sectionCount; i++)
             {
                 reader.Stream.Seek(sectionPos + (i * 12));
-                ReadSection(reader, textOffsets, textTalkerIndices, textStrings);
+                ReadSection(reader, msgStringOffsets, msgStrings);
             }
 
             reader.Stream.Seek(0x3C);
@@ -85,21 +86,18 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
 
             // Find the offset of the first string so we can store the file in bytes up to the first string
             int firstStringStart = (int)talkerPos;
-
-            if (textOffsets.Count != 0)
+            if (msgStrings.Count != 0)
             {
-                reader.Stream.PushToPosition(textOffsets.Min());
-                firstStringStart = (int)reader.ReadInt32();
-                reader.Stream.PopPosition();
+                firstStringStart = (int)msgStrings.MinBy(str => str.StringOffset).StringOffset;
             }
 
             reader.Stream.Seek(0);
             byte[] fileBuffer = reader.ReadBytes(firstStringStart);
 
-            return new MsgFile(fileBuffer, textOffsets, textTalkerIndices, textStrings, talkerStrings);
+            return new MsgFile(fileBuffer, msgStringOffsets, msgStrings, talkerStrings);
         }
 
-        private static void ReadSection(DataReader reader, List<uint> textOffsets, List<int> textTalkerIndices, List<string> textStrings)
+        private static void ReadSection(DataReader reader, List<uint> msgStringOffsets, List<MsgFileString> msgStrings)
         {
             reader.Stream.Seek(6, SeekOrigin.Current);
 
@@ -109,52 +107,54 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
             for (int i = 0; i < groupCount; i++)
             {
                 reader.Stream.Seek(groupPos + (i * 16));
-                ReadGroup(reader, textOffsets, textTalkerIndices, textStrings);
+                ReadGroup(reader, msgStringOffsets, msgStrings);
             }
         }
 
-        private static void ReadGroup(DataReader reader, List<uint> textOffsets, List<int> textTalkerIndices, List<string> textStrings)
+        private static void ReadGroup(DataReader reader, List<uint> msgStringOffsets, List<MsgFileString> msgStrings)
         {
             reader.Stream.Seek(4, SeekOrigin.Current);
 
-            var textPos = reader.ReadUInt32();
+            var stringPos = reader.ReadUInt32();
             reader.ReadByte();
-            var textCount = reader.ReadByte();
+            var stringCount = reader.ReadByte();
 
-            for (int i = 0; i < textCount; i++)
+            reader.Stream.Seek(stringPos);
+            for (int i = 0; i < stringCount; i++)
             {
-                reader.Stream.Seek(textPos + (i * 12));
-                ReadText(reader, textOffsets, textTalkerIndices, textStrings);
+                msgStringOffsets.Add((uint)reader.Stream.Position);
+                msgStrings.Add(ReadMsgString(reader));
             }
         }
 
-        private static void ReadText(DataReader reader, List<uint> textOffsets, List<int> textTalkerIndices, List<string> textStrings)
+        private static MsgFileString ReadMsgString(DataReader reader)
         {
-            var stringLength = reader.ReadUInt16();
-            var propCount = reader.ReadSByte();
-            reader.ReadByte();
+            var msgString = reader.Read<MsgFileString>() as MsgFileString;
+            reader.Stream.PushCurrentPosition();
 
-            textOffsets.Add((uint)reader.Stream.Position);
-            var stringPos = reader.ReadUInt32();
-            var propPos = reader.ReadUInt32();
+            reader.Stream.Seek(msgString.StringOffset);
+            msgString.Text = reader.ReadString(msgString.StringSize);
 
-            reader.Stream.RunInPosition(() => textStrings.Add(reader.ReadString(stringLength)), stringPos);
+            msgString.TalkerIndex = -1;
 
-            var index = textTalkerIndices.Count;
-            textTalkerIndices.Add(-1);
-
-            for (int i = 0; i < propCount; i++)
+            for (int i = 0; i < msgString.PropCount; i++)
             {
-                reader.Stream.Seek(propPos + (i * 16));
-                var propType = reader.ReadUInt16();
+                reader.Stream.Seek(msgString.PropOffset + (i * 16));
+                var propType = (MsgPropType)reader.ReadUInt16();
 
-                if (propType == 0x020B)
+                switch (propType)
                 {
-                    reader.Stream.Seek(6, SeekOrigin.Current);
-                    textTalkerIndices[index] = reader.ReadInt16();
-                    break;
+                    case MsgPropType.TalkerProp:
+                        reader.Stream.Seek(6, SeekOrigin.Current);
+                        msgString.TalkerIndex = reader.ReadInt16();
+                        break;
+                    default:
+                        break;
                 }
             }
+
+            reader.Stream.PopPosition();
+            return msgString;
         }
     }
 }

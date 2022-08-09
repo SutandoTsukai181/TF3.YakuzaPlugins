@@ -208,8 +208,8 @@ namespace TF3.Tests.YakuzaKenzan
             Assert.AreEqual(3, bin.MsgArrays.Length);
             Assert.AreEqual(2, bin.MsgArrays[1].Length);
 
-            Assert.AreEqual("おい　貴様！", bin.MsgArrays[0][0].TextStrings[0]);
-            Assert.AreEqual("あいつ…", bin.MsgArrays[1][0].TextStrings[0]);
+            Assert.AreEqual("おい　貴様！", bin.MsgArrays[0][0].MsgStrings[0].Text);
+            Assert.AreEqual("あいつ…", bin.MsgArrays[1][0].MsgStrings[0].Text);
         }
 
         [Test]
@@ -262,7 +262,7 @@ namespace TF3.Tests.YakuzaKenzan
 
             PacEncount binResult = translator.Convert(bin);
 
-            Assert.AreEqual("Translation test", binResult.MsgArrays[0][0].TextStrings[0]);
+            Assert.AreEqual("Translation test", binResult.MsgArrays[0][0].MsgStrings[0].Text);
         }
 
         [Test]

@@ -20,6 +20,7 @@
 namespace TF3.YarhlPlugin.YakuzaKenzan.Formats
 {
     using System.Collections.Generic;
+    using TF3.YarhlPlugin.YakuzaKenzan.Types;
     using Yarhl.FileFormat;
 
     /// <summary>
@@ -33,9 +34,8 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Formats
         public MsgFile() : base()
         {
             FileBuffer = null;
-            TextStringOffsets = new List<uint>();
-            TextTalkerIndices = new List<int>();
-            TextStrings = new List<string>();
+            MsgStringOffsets = new List<uint>();
+            MsgStrings = new List<MsgFileString>();
             TalkerStrings = new List<string>();
         }
 
@@ -43,16 +43,14 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Formats
         /// Initializes a new instance of the <see cref="MsgFile"/> class.
         /// </summary>
         /// <param name="fileBuffer">The file buffer.</param>
-        /// <param name="textOffsets">A list containing the offset for each text string.</param>
-        /// <param name="textTalkerIndices">A list containing the talker index for each text string.</param>
-        /// <param name="textStrings">A list containing the text strings.</param>
+        /// <param name="msgStringOffsets">A list containing the offset for each text string.</param>
+        /// <param name="msgStrings">A list containing the msg file strings.</param>
         /// <param name="talkerStrings">A list containing the talker strings.</param>
-        public MsgFile(byte[] fileBuffer, List<uint> textOffsets, List<int> textTalkerIndices, List<string> textStrings, List<string> talkerStrings) : base()
+        public MsgFile(byte[] fileBuffer, List<uint> msgStringOffsets, List<MsgFileString> msgStrings, List<string> talkerStrings) : base()
         {
             FileBuffer = fileBuffer;
-            TextStringOffsets = textOffsets;
-            TextTalkerIndices = textTalkerIndices;
-            TextStrings = textStrings;
+            MsgStringOffsets = msgStringOffsets;
+            MsgStrings = msgStrings;
             TalkerStrings = talkerStrings;
         }
 
@@ -64,17 +62,12 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Formats
         /// <summary>
         /// Gets the text strings offsets list.
         /// </summary>
-        public List<uint> TextStringOffsets { get; }
-
-        /// <summary>
-        /// Gets the text strings talker indices.
-        /// </summary>
-        public List<int> TextTalkerIndices { get; }
+        public List<uint> MsgStringOffsets { get; }
 
         /// <summary>
         /// Gets the text strings list.
         /// </summary>
-        public List<string> TextStrings { get; }
+        public List<MsgFileString> MsgStrings { get; }
 
         /// <summary>
         /// Gets the talker strings list.

@@ -59,19 +59,21 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
 
         private void Extract(MsgFile msg, Po po)
         {
-            for (int i = 0; i < msg.TextStrings.Count; i++)
+            for (int i = 0; i < msg.MsgStrings.Count; i++)
             {
-                if (msg.TextStrings[i] == string.Empty)
+                var msgString = msg.MsgStrings[i];
+
+                if (msgString.Text == string.Empty)
                     continue;
 
                 var context = $"speech_{i}";
-                if (msg.TextTalkerIndices[i] >= 0)
-                    context += $"_{msg.TalkerStrings[msg.TextTalkerIndices[i]]}";
+                if (msgString.TalkerIndex >= 0)
+                    context += $"_{msg.TalkerStrings[msgString.TalkerIndex]}";
 
                 var entry = new PoEntry()
                 {
-                    Original = msg.TextStrings[i].Replace("\\", "\\\\").Replace("\r\n", "\n"),
-                    Translated = msg.TextStrings[i].Replace("\\", "\\\\").Replace("\r\n", "\n"),
+                    Original = msgString.Text.Replace("\\", "\\\\").Replace("\r\n", "\n"),
+                    Translated = msgString.Text.Replace("\\", "\\\\").Replace("\r\n", "\n"),
                     Context = context,
                 };
                 po.Add(entry);

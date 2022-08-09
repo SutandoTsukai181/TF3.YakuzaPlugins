@@ -81,10 +81,10 @@ namespace TF3.Tests.YakuzaKenzan
             MsgFile bin = converter.Convert(binary);
 
             Assert.IsNotNull(bin);
-            Assert.AreEqual(bin.TextStringOffsets.Count, bin.TextStrings.Count);
+            Assert.AreEqual(bin.MsgStringOffsets.Count, bin.MsgStrings.Count);
 
-            Assert.AreEqual(3, bin.TextStrings.Count);
-            Assert.AreEqual("おい、どうした？", bin.TextStrings[0]);
+            Assert.AreEqual(3, bin.MsgStrings.Count);
+            Assert.AreEqual("おい、どうした？", bin.MsgStrings[0].Text);
 
             Assert.AreEqual(2, bin.TalkerStrings.Count);
             Assert.AreEqual("桐生", bin.TalkerStrings[0]);
@@ -140,7 +140,7 @@ namespace TF3.Tests.YakuzaKenzan
 
             MsgFile binResult = translator.Convert(bin);
 
-            Assert.AreEqual("Translation test", binResult.TextStrings[0]);
+            Assert.AreEqual("Translation test", binResult.MsgStrings[0].Text);
         }
 
         [Test]

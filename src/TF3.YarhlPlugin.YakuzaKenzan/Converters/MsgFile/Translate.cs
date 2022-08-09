@@ -74,7 +74,7 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
 
                 if (listName == "speech")
                 {
-                    msg.TextStrings[index] = entry.Translated.Replace("\\\\", "\\").Replace("\n", "\r\n");
+                    msg.MsgStrings[index].Text = entry.Translated.Replace("\\\\", "\\").Replace("\n", "\r\n");
                 }
                 else if (listName == "talker")
                 {
