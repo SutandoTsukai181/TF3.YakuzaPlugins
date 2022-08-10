@@ -81,6 +81,9 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.MsgFile
 
             for (int i = 0; i < msg.TalkerStrings.Count; i++)
             {
+                if (msg.TalkerStrings[i] == string.Empty)
+                    continue;
+
                 var entry = new PoEntry()
                 {
                     Original = msg.TalkerStrings[i],
