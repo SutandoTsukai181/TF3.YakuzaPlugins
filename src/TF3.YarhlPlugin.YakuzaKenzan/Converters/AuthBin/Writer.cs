@@ -45,21 +45,104 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
 
             DataStream stream = DataStreamFactory.FromMemory();
 
+            var reader = new DataReader(stream)
+            {
+                DefaultEncoding = Encoding.GetEncoding(932),
+                Endianness = EndiannessMode.BigEndian,
+            };
+
             var writer = new DataWriter(stream)
             {
                 DefaultEncoding = Encoding.GetEncoding(932),
                 Endianness = EndiannessMode.BigEndian,
             };
 
-            writer.Write(source.FileBuffer);
+            // Add file buffer length as the last offset to be used when splitting the buffer
+            source.NodeHeaderOffsets.Add((uint)source.FileBuffer.Length);
 
-            for (int i = 0; i < source.SubtitleNodeOffsets.Count; i++)
+            byte[] section = new byte[source.NodeHeaderOffsets[0]];
+            Array.Copy(source.FileBuffer, section, source.NodeHeaderOffsets[0]);
+            writer.Write(section);
+
+            for (int i = 0; i < source.NodeHeaders.Count; i++)
             {
-                writer.Stream.Seek(source.SubtitleNodeOffsets[i]);
-                writer.WriteOfType(source.SubtitleNodes[i]);
+                var nodeHeader = source.NodeHeaders[i];
+                var oldSize = nodeHeader.NodeDataSize + 0x20;   // Size of node header
+
+                nodeHeader.NodeCount = (uint)nodeHeader.SubtitleNodes.Count;
+                nodeHeader.NodeDataSize = nodeHeader.NodeCount * 0x110; // Size of AuthSubtitleNode
+
+                // Always seek to end of stream before writing node header
+                writer.Stream.Seek(writer.Stream.Length);
+                writer.WriteOfType(nodeHeader);
+                foreach (var subtitleNode in nodeHeader.SubtitleNodes)
+                {
+                    writer.WriteOfType(subtitleNode);
+                }
+
+                var nextSectionStart = source.NodeHeaderOffsets[i] + oldSize;
+                var nextSectionSize = source.NodeHeaderOffsets[i + 1] - nextSectionStart;
+
+                section = new byte[nextSectionSize];
+                Array.Copy(source.FileBuffer, nextSectionStart, section, 0, nextSectionSize);
+                writer.Write(section);
+
+                // Update all file offsets after each node header written
+                int sizeDifference = (int)nodeHeader.NodeDataSize + 0x20 - (int)oldSize;
+                UpdateFileOffsets(reader, writer, source.NodeHeaderOffsets[i], sizeDifference);
             }
 
             return new BinaryFormat(stream);
+        }
+
+        private static void UpdateFileOffsets(DataReader reader, DataWriter writer, uint nodeOffset, int sizeDifference)
+        {
+            // Update file size
+            reader.Stream.Seek(0x10);
+            var fileSize = reader.ReadUInt32();
+            writer.Stream.RunInPosition(() => writer.Write(fileSize + sizeDifference), 0x10);
+
+            // Update offsets in file header
+            var authHeaderOffsets = new uint[] { 0x14, 0x1C, 0x20, 0x30 };
+            foreach (var offset in authHeaderOffsets)
+            {
+                reader.Stream.Seek(offset);
+                var offsetVal = reader.ReadUInt32();
+                if (offsetVal > nodeOffset)
+                    writer.Stream.RunInPosition(() => writer.Write(offsetVal + sizeDifference), offset);
+            }
+
+            reader.Stream.Seek(0x1C);
+            var nodeStart = reader.ReadUInt32();
+
+            reader.Stream.Seek(nodeStart);
+            UpdateNodeOffsets(reader, writer, nodeOffset, sizeDifference);
+        }
+
+        private static void UpdateNodeOffsets(DataReader reader, DataWriter writer, uint nodeOffset, int sizeDifference)
+        {
+            var nodeStart = reader.Stream.Position;
+
+            // Update offsets in node
+            var authNodeOffsets = new uint[] { 0x60, 0x68, 0x6C, 0x70 };
+            foreach (var offset in authNodeOffsets)
+            {
+                reader.Stream.Seek(nodeStart + offset);
+                var offsetVal = reader.ReadUInt32();
+                if (offsetVal > nodeOffset)
+                    writer.Stream.RunInPosition(() => writer.Write(offsetVal + sizeDifference), nodeStart + offset);
+            }
+
+            // Go to all subsequent nodes and update their offsets
+            reader.Stream.Seek(nodeStart + 0x6C);
+            var childNodeOffset = reader.ReadUInt32();
+            var nextNodeOffset = reader.ReadUInt32();
+
+            if (childNodeOffset != 0)
+                reader.Stream.RunInPosition(() => UpdateNodeOffsets(reader, writer, nodeOffset, sizeDifference), childNodeOffset);
+
+            if (nextNodeOffset != 0)
+                reader.Stream.RunInPosition(() => UpdateNodeOffsets(reader, writer, nodeOffset, sizeDifference), nextNodeOffset);
         }
     }
 }

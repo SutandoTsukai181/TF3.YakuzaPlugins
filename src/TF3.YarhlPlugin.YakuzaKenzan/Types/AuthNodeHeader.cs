@@ -19,6 +19,7 @@
 // SOFTWARE.
 namespace TF3.YarhlPlugin.YakuzaKenzan.Types
 {
+    using System.Collections.Generic;
     using TF3.YarhlPlugin.YakuzaKenzan.Enums;
     using Yarhl.IO.Serialization.Attributes;
 
@@ -28,6 +29,20 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Types
     [Serializable]
     public class AuthNodeHeader
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AuthNodeHeader"/> class.
+        /// </summary>
+        public AuthNodeHeader()
+        {
+            Guid0 = 0xFFFFFFFFFFFFFFFF;
+            Guid1 = 0xFFFFFFFFFFFFFFFF;
+            NodeType = 0;
+            NodeDataSize = 0;
+            NodeCount = 0;
+            Padding = 0;
+            SubtitleNodes = new List<AuthSubtitleNode>();
+        }
+
         /// <summary>
         /// Gets or sets the first 8 bytes of the GUID.
         /// </summary>
@@ -59,5 +74,11 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Types
         /// <remarks>Can be ignored.</remarks>
         /// </summary>
         public uint Padding { get; set; }
+
+        /// <summary>
+        /// Gets the list of subtitle nodes.
+        /// </summary>
+        [BinaryIgnore]
+        public List<AuthSubtitleNode> SubtitleNodes { get; }
     }
 }

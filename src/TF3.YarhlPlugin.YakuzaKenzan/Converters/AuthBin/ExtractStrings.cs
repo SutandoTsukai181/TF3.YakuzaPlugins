@@ -59,18 +59,21 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
 
         private void Extract(AuthBin bin, Po po)
         {
-            for (int i = 0; i < bin.SubtitleNodes.Count; i++)
+            for (int i = 0; i < bin.NodeHeaders.Count; i++)
             {
-                if (bin.SubtitleNodes[i].Text == string.Empty)
-                    continue;
-
-                var entry = new PoEntry()
+                foreach (var subtitleNode in bin.NodeHeaders[i].SubtitleNodes)
                 {
-                    Original = bin.SubtitleNodes[i].Text,
-                    Translated = bin.SubtitleNodes[i].Text,
-                    Context = $"{i}",
-                };
-                po.Add(entry);
+                    if (subtitleNode.Text == string.Empty)
+                        continue;
+
+                    var entry = new PoEntry()
+                    {
+                        Original = subtitleNode.Text,
+                        Translated = subtitleNode.Text,
+                        Context = $"{i}_{subtitleNode.StartFrame}_{subtitleNode.EndFrame}",
+                    };
+                    po.Add(entry);
+                }
             }
         }
     }

@@ -29,6 +29,31 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Types
     public class AuthSubtitleNode
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="AuthSubtitleNode"/> class.
+        /// </summary>
+        public AuthSubtitleNode()
+        {
+            StartFrame = 0;
+            EndFrame = 0;
+            Padding = 0;
+            Text = "";
+        }
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AuthSubtitleNode"/> class.
+        /// </summary>
+        /// <param name="startFrame">Subtitle start frame.</param>
+        /// <param name="endFrame">Subtitle end frame.</param>
+        /// <param name="text">Subtitle text.</param>
+        public AuthSubtitleNode(uint startFrame, uint endFrame, string text)
+        {
+            StartFrame = startFrame;
+            EndFrame = endFrame;
+            Padding = 0;
+            Text = text;
+        }
+
+        /// <summary>
         /// Gets or sets the start frame.
         /// <remarks>Framerate is 30. Divide this number by 30 to get the time in seconds.</remarks>
         /// </summary>

@@ -34,21 +34,21 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Formats
         public AuthBin() : base()
         {
             FileBuffer = null;
-            SubtitleNodeOffsets = new List<uint>();
-            SubtitleNodes = new List<AuthSubtitleNode>();
+            NodeHeaderOffsets = new List<uint>();
+            NodeHeaders = new List<AuthNodeHeader>();
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="AuthBin"/> class.
         /// </summary>
         /// <param name="fileBuffer">The file buffer.</param>
-        /// <param name="subtitleNodeOffsets">A list containing the offset for each subtitle node.</param>
-        /// <param name="subtitleNodes">A list containing the subtitle nodes</param>
-        public AuthBin(byte[] fileBuffer, List<uint> subtitleNodeOffsets, List<AuthSubtitleNode> subtitleNodes) : base()
+        /// <param name="nodeOffsets">A list containing the offset for each subtitle node.</param>
+        /// <param name="nodeHeaders">A list containing the subtitle nodes</param>
+        public AuthBin(byte[] fileBuffer, List<uint> nodeOffsets, List<AuthNodeHeader> nodeHeaders) : base()
         {
             FileBuffer = fileBuffer;
-            SubtitleNodeOffsets = subtitleNodeOffsets;
-            SubtitleNodes = subtitleNodes;
+            NodeHeaderOffsets = nodeOffsets;
+            NodeHeaders = nodeHeaders;
         }
 
         /// <summary>
@@ -59,11 +59,11 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Formats
         /// <summary>
         /// Gets the subtitle node offsets list.
         /// </summary>
-        public List<uint> SubtitleNodeOffsets { get; }
+        public List<uint> NodeHeaderOffsets { get; }
 
         /// <summary>
-        /// Gets the subtitle nodes list.
+        /// Gets the subtitle node header list.
         /// </summary>
-        public List<AuthSubtitleNode> SubtitleNodes { get; }
+        public List<AuthNodeHeader> NodeHeaders { get; }
     }
 }

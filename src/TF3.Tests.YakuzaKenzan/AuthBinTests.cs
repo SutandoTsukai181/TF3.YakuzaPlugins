@@ -149,10 +149,10 @@ namespace TF3.Tests.YakuzaKenzan
             AuthBin bin = converter.Convert(binary);
 
             Assert.IsNotNull(bin);
-            Assert.AreEqual(bin.SubtitleNodeOffsets.Count, bin.SubtitleNodes.Count);
+            Assert.AreEqual(bin.NodeHeaderOffsets.Count, bin.NodeHeaders.Count);
 
-            Assert.AreEqual(0x1A0, bin.SubtitleNodeOffsets[0]);
-            Assert.AreEqual("どうして……", bin.SubtitleNodes[0].Text);
+            Assert.AreEqual(0x180, bin.NodeHeaderOffsets[0]);
+            Assert.AreEqual("どうして……", bin.NodeHeaders[0].SubtitleNodes[0].Text);
         }
 
         [Test]
@@ -205,7 +205,7 @@ namespace TF3.Tests.YakuzaKenzan
 
             AuthBin binResult = translator.Convert(bin);
 
-            Assert.AreEqual("Translation test", binResult.SubtitleNodes[0].Text);
+            Assert.AreEqual("Translation test", binResult.NodeHeaders[0].SubtitleNodes[0].Text);
         }
 
         [Test]

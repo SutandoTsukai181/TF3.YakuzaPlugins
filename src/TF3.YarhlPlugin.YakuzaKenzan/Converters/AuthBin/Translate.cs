@@ -21,6 +21,7 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
 {
     using System;
     using TF3.YarhlPlugin.YakuzaKenzan.Formats;
+    using TF3.YarhlPlugin.YakuzaKenzan.Types;
     using Yarhl.FileFormat;
     using Yarhl.Media.Text;
 
@@ -66,11 +67,21 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
 
         private void InsertStrings(AuthBin bin)
         {
+            for (int i = 0; i < bin.NodeHeaders.Count; i++)
+            {
+                bin.NodeHeaders[i].SubtitleNodes.Clear();
+            }
+
             foreach (PoEntry entry in _translation.Entries)
             {
-                // Replacing the entries by the index is important, since some subtitles might have empty text
-                int index = int.Parse(entry.Context);
-                bin.SubtitleNodes[index].Text = entry.Translated.Replace("\n", "\\n");
+                var splits = entry.Context.Split('_', 3);
+
+                int index = int.Parse(splits[0]);
+                var startFrame = uint.Parse(splits[1]);
+                var endFrame = uint.Parse(splits[2]);
+
+                var subtitleNode = new AuthSubtitleNode(startFrame, endFrame, entry.Translated.Replace("\r\n", "\n").Replace("\n", "\\n"));
+                bin.NodeHeaders[index].SubtitleNodes.Add(subtitleNode);
             }
         }
     }
