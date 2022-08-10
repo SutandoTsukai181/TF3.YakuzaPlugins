@@ -6205,6 +6205,49 @@
    ],
    "Assets": [
       {
+         "Id": "karuta_fuda.bin",
+         "OutputNames": [
+            "text/minigame/karuta_fuda.po"
+         ],
+         "Files": [
+            {
+               "Name": "karuta_fuda.bin",
+               "ContainerId": "root",
+               "Path": "PS3_GAME/USRDIR/bin/minigame/karuta/karuta_fuda.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Karuta.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Karuta.Writer",
+                     "ParameterId": ""
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Karuta.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Karuta.Translate"
+      },
+      {
          "Id": "blacksmith.bin",
          "OutputNames": [
             "text/shop/blacksmith.po"
