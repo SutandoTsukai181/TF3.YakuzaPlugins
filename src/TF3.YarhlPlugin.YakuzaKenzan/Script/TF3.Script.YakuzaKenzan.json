@@ -98,6 +98,13 @@
          }
       },
       {
+         "Id": "shopEatCompBinParams",
+         "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.ReaderParameters, TF3.YarhlPlugin.YakuzaKenzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+         "Value": {
+            "BinTypeName": "TF3.YarhlPlugin.YakuzaKenzan.Types.GeneralBin.ShopEatCompBin, TF3.YarhlPlugin.YakuzaKenzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+         }
+      },
+      {
          "Id": "tutorialBinParams",
          "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.ReaderParameters, TF3.YarhlPlugin.YakuzaKenzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
          "Value": {
@@ -120,6 +127,49 @@
       }
    ],
    "Containers": [
+      {
+         "Id": "pause.par",
+         "Name": "pause.par",
+         "Path": "PS3_GAME/USRDIR/bin/pausepar/pause.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "pause_boot.par",
+               "Name": "pause_boot.par",
+               "Path": "pause_boot.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
       {
          "Id": "c00_0010.par",
          "Name": "c00_0010.par",
@@ -8799,6 +8849,53 @@
                   {
                      "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Writer",
                      "ParameterId": ""
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Translate"
+      },
+      {
+         "Id": "shopeat_comp.bin",
+         "OutputNames": [
+            "text/pause/shopeat_comp.po"
+         ],
+         "Files": [
+            {
+               "Name": "shopeat_comp.bin",
+               "ContainerId": "pause.par",
+               "Path": "shopeat_comp.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Reader",
+                     "ParameterId": "shopEatCompBinParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
                   }
                ]
             }
