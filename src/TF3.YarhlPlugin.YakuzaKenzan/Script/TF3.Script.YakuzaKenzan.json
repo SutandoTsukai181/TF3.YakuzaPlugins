@@ -118471,6 +118471,1451 @@
             }
          ],
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.EnemyDispose.Translate"
+      },
+      {
+         "Id": "jikkyou.bin",
+         "OutputNames": [
+            "text/kame/jikkyou.po"
+         ],
+         "Files": [
+            {
+               "Name": "jikkyou.bin",
+               "ContainerId": "root",
+               "Path": "PS3_GAME/USRDIR/bin/kame/jikkyou.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "kame_race.bin",
+         "OutputNames": [
+            "text/kame/kame_race.po"
+         ],
+         "Files": [
+            {
+               "Name": "kame_race.bin",
+               "ContainerId": "root",
+               "Path": "PS3_GAME/USRDIR/bin/kame/kame_race.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "race.bin",
+         "OutputNames": [
+            "text/kame/race.po"
+         ],
+         "Files": [
+            {
+               "Name": "race.bin",
+               "ContainerId": "root",
+               "Path": "PS3_GAME/USRDIR/bin/kame/race.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "complete_arms.bin",
+         "OutputNames": [
+            "text/pause/complete_arms.po"
+         ],
+         "Files": [
+            {
+               "Name": "complete_arms.bin",
+               "ContainerId": "pause.par",
+               "Path": "complete_arms.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "complete_heat.bin",
+         "OutputNames": [
+            "text/pause/complete_heat.po"
+         ],
+         "Files": [
+            {
+               "Name": "complete_heat.bin",
+               "ContainerId": "pause.par",
+               "Path": "complete_heat.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "complete_skill.bin",
+         "OutputNames": [
+            "text/pause/complete_skill.po"
+         ],
+         "Files": [
+            {
+               "Name": "complete_skill.bin",
+               "ContainerId": "pause.par",
+               "Path": "complete_skill.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "correlation_group.bin",
+         "OutputNames": [
+            "text/pause/correlation_group.po"
+         ],
+         "Files": [
+            {
+               "Name": "correlation_group.bin",
+               "ContainerId": "pause.par",
+               "Path": "correlation_group.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "correlation_person.bin",
+         "OutputNames": [
+            "text/pause/correlation_person.po"
+         ],
+         "Files": [
+            {
+               "Name": "correlation_person.bin",
+               "ContainerId": "pause.par",
+               "Path": "correlation_person.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "dictionary.bin",
+         "OutputNames": [
+            "text/pause/dictionary.po"
+         ],
+         "Files": [
+            {
+               "Name": "dictionary.bin",
+               "ContainerId": "pause.par",
+               "Path": "dictionary.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "dictionary_ignore.bin",
+         "OutputNames": [
+            "text/pause/dictionary_ignore.po"
+         ],
+         "Files": [
+            {
+               "Name": "dictionary_ignore.bin",
+               "ContainerId": "pause.par",
+               "Path": "dictionary_ignore.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "environment.bin",
+         "OutputNames": [
+            "text/pause/environment.po"
+         ],
+         "Files": [
+            {
+               "Name": "environment.bin",
+               "ContainerId": "pause.par",
+               "Path": "environment.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "explanation.bin",
+         "OutputNames": [
+            "text/pause/explanation.po"
+         ],
+         "Files": [
+            {
+               "Name": "explanation.bin",
+               "ContainerId": "pause.par",
+               "Path": "explanation.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "item.bin",
+         "OutputNames": [
+            "text/pause/item.po"
+         ],
+         "Files": [
+            {
+               "Name": "item.bin",
+               "ContainerId": "pause.par",
+               "Path": "item.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "item_s.bin",
+         "OutputNames": [
+            "text/pause/item_s.po"
+         ],
+         "Files": [
+            {
+               "Name": "item_s.bin",
+               "ContainerId": "pause.par",
+               "Path": "item_s.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "kakemawari.bin",
+         "OutputNames": [
+            "text/pause/kakemawari.po"
+         ],
+         "Files": [
+            {
+               "Name": "kakemawari.bin",
+               "ContainerId": "pause.par",
+               "Path": "kakemawari.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "otazunemono.bin",
+         "OutputNames": [
+            "text/pause/otazunemono.po"
+         ],
+         "Files": [
+            {
+               "Name": "otazunemono.bin",
+               "ContainerId": "pause.par",
+               "Path": "otazunemono.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "ougi.bin",
+         "OutputNames": [
+            "text/pause/ougi.po"
+         ],
+         "Files": [
+            {
+               "Name": "ougi.bin",
+               "ContainerId": "pause.par",
+               "Path": "ougi.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "shuren.bin",
+         "OutputNames": [
+            "text/pause/shuren.po"
+         ],
+         "Files": [
+            {
+               "Name": "shuren.bin",
+               "ContainerId": "pause.par",
+               "Path": "shuren.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "substory.bin",
+         "OutputNames": [
+            "text/pause/substory.po"
+         ],
+         "Files": [
+            {
+               "Name": "substory.bin",
+               "ContainerId": "pause.par",
+               "Path": "substory.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "toranomaki.bin",
+         "OutputNames": [
+            "text/pause/toranomaki.po"
+         ],
+         "Files": [
+            {
+               "Name": "toranomaki.bin",
+               "ContainerId": "pause.par",
+               "Path": "toranomaki.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "tougijyo.bin",
+         "OutputNames": [
+            "text/pause/tougijyo.po"
+         ],
+         "Files": [
+            {
+               "Name": "tougijyo.bin",
+               "ContainerId": "pause.par",
+               "Path": "tougijyo/tougijyo.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "tougijyo_t.bin",
+         "OutputNames": [
+            "text/pause/tougijyo_t.po"
+         ],
+         "Files": [
+            {
+               "Name": "tougijyo_t.bin",
+               "ContainerId": "pause.par",
+               "Path": "tougijyo/tougijyo_t.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "complete_arms.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/complete_arms.po"
+         ],
+         "Files": [
+            {
+               "Name": "complete_arms.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "complete_arms.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "complete_heat.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/complete_heat.po"
+         ],
+         "Files": [
+            {
+               "Name": "complete_heat.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "complete_heat.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "complete_skill.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/complete_skill.po"
+         ],
+         "Files": [
+            {
+               "Name": "complete_skill.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "complete_skill.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "dictionary.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/dictionary.po"
+         ],
+         "Files": [
+            {
+               "Name": "dictionary.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "dictionary.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "dictionary_ignore.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/dictionary_ignore.po"
+         ],
+         "Files": [
+            {
+               "Name": "dictionary_ignore.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "dictionary_ignore.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "environment.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/environment.po"
+         ],
+         "Files": [
+            {
+               "Name": "environment.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "environment.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "explanation.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/explanation.po"
+         ],
+         "Files": [
+            {
+               "Name": "explanation.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "explanation.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "item.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/item.po"
+         ],
+         "Files": [
+            {
+               "Name": "item.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "item.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "item_s.bin",
+         "OutputNames": [
+            "text/pause/pause_boot/item_s.po"
+         ],
+         "Files": [
+            {
+               "Name": "item_s.bin",
+               "ContainerId": "pause_boot.par",
+               "Path": "item_s.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
       }
    ],
    "Patches": []
