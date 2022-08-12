@@ -386,6 +386,49 @@
          ]
       },
       {
+         "Id": "c00_0090.par",
+         "Name": "c00_0090.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c00_0090/c00_0090.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C00_0090_cmn.par",
+               "Name": "C00_0090_cmn.par",
+               "Path": "C00_0090_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c01_0010.par",
          "Name": "c01_0010.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c01_0010/c01_0010.par",
@@ -601,6 +644,49 @@
          ]
       },
       {
+         "Id": "c01_0100.par",
+         "Name": "c01_0100.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c01_0100/c01_0100.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C01_0100_cmn.par",
+               "Name": "C01_0100_cmn.par",
+               "Path": "C01_0100_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c01_0120.par",
          "Name": "c01_0120.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c01_0120/c01_0120.par",
@@ -794,6 +880,49 @@
                "Id": "C02_0010_cmn.par",
                "Name": "C02_0010_cmn.par",
                "Path": "C02_0010_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c02_0020.par",
+         "Name": "c02_0020.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c02_0020/c02_0020.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C02_0020_cmn.par",
+               "Name": "C02_0020_cmn.par",
+               "Path": "C02_0020_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -1310,6 +1439,49 @@
                "Id": "C03_0080_cmn.par",
                "Name": "C03_0080_cmn.par",
                "Path": "C03_0080_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c03_0090.par",
+         "Name": "c03_0090.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c03_0090/c03_0090.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C03_0090_cmn.par",
+               "Name": "C03_0090_cmn.par",
+               "Path": "C03_0090_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -2192,6 +2364,49 @@
          ]
       },
       {
+         "Id": "c05_0040.par",
+         "Name": "c05_0040.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c05_0040/c05_0040.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C05_0040_cmn.par",
+               "Name": "C05_0040_cmn.par",
+               "Path": "C05_0040_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c05_0050.par",
          "Name": "c05_0050.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c05_0050/c05_0050.par",
@@ -2256,6 +2471,49 @@
                "Id": "C05_0060_cmn.par",
                "Name": "C05_0060_cmn.par",
                "Path": "C05_0060_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c05_0080.par",
+         "Name": "c05_0080.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c05_0080/c05_0080.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C05_0080_cmn.par",
+               "Name": "C05_0080_cmn.par",
+               "Path": "C05_0080_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -2794,6 +3052,49 @@
          ]
       },
       {
+         "Id": "c07_0010.par",
+         "Name": "c07_0010.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c07_0010/c07_0010.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C07_0010_cmn.par",
+               "Name": "C07_0010_cmn.par",
+               "Path": "C07_0010_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c07_0020.par",
          "Name": "c07_0020.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c07_0020/c07_0020.par",
@@ -3224,6 +3525,49 @@
          ]
       },
       {
+         "Id": "c07_0120.par",
+         "Name": "c07_0120.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c07_0120/c07_0120.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C07_0120_cmn.par",
+               "Name": "C07_0120_cmn.par",
+               "Path": "C07_0120_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c07_0130.par",
          "Name": "c07_0130.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c07_0130/c07_0130.par",
@@ -3245,6 +3589,49 @@
                "Id": "C07_0130_cmn.par",
                "Name": "C07_0130_cmn.par",
                "Path": "C07_0130_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c08_0010.par",
+         "Name": "c08_0010.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c08_0010/c08_0010.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C08_0010_cmn.par",
+               "Name": "C08_0010_cmn.par",
+               "Path": "C08_0010_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -3611,6 +3998,49 @@
          ]
       },
       {
+         "Id": "c08_0100.par",
+         "Name": "c08_0100.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c08_0100/c08_0100.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C08_0100_cmn.par",
+               "Name": "C08_0100_cmn.par",
+               "Path": "C08_0100_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c08_0110.par",
          "Name": "c08_0110.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c08_0110/c08_0110.par",
@@ -3847,6 +4277,49 @@
                "Id": "C09_0050_cmn.par",
                "Name": "C09_0050_cmn.par",
                "Path": "C09_0050_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c09_0060.par",
+         "Name": "c09_0060.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c09_0060/c09_0060.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C09_0060_cmn.par",
+               "Name": "C09_0060_cmn.par",
+               "Path": "C09_0060_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -4127,6 +4600,49 @@
          ]
       },
       {
+         "Id": "c09_0110.par",
+         "Name": "c09_0110.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c09_0110/c09_0110.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C09_0110_cmn.par",
+               "Name": "C09_0110_cmn.par",
+               "Path": "C09_0110_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c09_0120.par",
          "Name": "c09_0120.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c09_0120/c09_0120.par",
@@ -4170,6 +4686,92 @@
          ]
       },
       {
+         "Id": "c10_0020.par",
+         "Name": "c10_0020.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c10_0020/c10_0020.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C10_0020_cmn.par",
+               "Name": "C10_0020_cmn.par",
+               "Path": "C10_0020_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c10_0030.par",
+         "Name": "c10_0030.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c10_0030/c10_0030.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C10_0030_cmn.par",
+               "Name": "C10_0030_cmn.par",
+               "Path": "C10_0030_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c10_0040.par",
          "Name": "c10_0040.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c10_0040/c10_0040.par",
@@ -4191,6 +4793,49 @@
                "Id": "C10_0040_cmn.par",
                "Name": "C10_0040_cmn.par",
                "Path": "C10_0040_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c10_0050.par",
+         "Name": "c10_0050.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c10_0050/c10_0050.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C10_0050_cmn.par",
+               "Name": "C10_0050_cmn.par",
+               "Path": "C10_0050_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -4514,6 +5159,49 @@
          ]
       },
       {
+         "Id": "c10_0130.par",
+         "Name": "c10_0130.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c10_0130/c10_0130.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C10_0130_cmn.par",
+               "Name": "C10_0130_cmn.par",
+               "Path": "C10_0130_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
          "Id": "c10_0140.par",
          "Name": "c10_0140.par",
          "Path": "PS3_GAME/USRDIR/bin/auth/c10_0140/c10_0140.par",
@@ -4707,6 +5395,49 @@
                "Id": "C11_0060_cmn.par",
                "Name": "C11_0060_cmn.par",
                "Path": "C11_0060_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c11_0070.par",
+         "Name": "c11_0070.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c11_0070/c11_0070.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C11_0070_cmn.par",
+               "Name": "C11_0070_cmn.par",
+               "Path": "C11_0070_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -5051,6 +5782,49 @@
                "Id": "C12_0010_cmn.par",
                "Name": "C12_0010_cmn.par",
                "Path": "C12_0010_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c12_0020.par",
+         "Name": "c12_0020.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c12_0020/c12_0020.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C12_0020_cmn.par",
+               "Name": "C12_0020_cmn.par",
+               "Path": "C12_0020_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -5911,6 +6685,49 @@
                "Id": "C22_0010_cmn.par",
                "Name": "C22_0010_cmn.par",
                "Path": "C22_0010_cmn.par",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+                     "ParameterId": "parReaderParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+                     "ParameterId": "parWriterParams"
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ],
+               "Containers": []
+            }
+         ]
+      },
+      {
+         "Id": "c22_0020.par",
+         "Name": "c22_0020.par",
+         "Path": "PS3_GAME/USRDIR/bin/auth/c22_0020/c22_0020.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": [
+            {
+               "Id": "C22_0020_cmn.par",
+               "Name": "C22_0020_cmn.par",
+               "Path": "C22_0020_cmn.par",
                "Checksum": 0,
                "Readers": [
                   {
@@ -9369,6 +10186,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c00_0090_Auth",
+         "OutputNames": [
+            "text/auth/c00_0090.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C00_0090_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c01_0010_Auth",
          "OutputNames": [
             "text/auth/c01_0010.po"
@@ -9604,6 +10468,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c01_0100_Auth",
+         "OutputNames": [
+            "text/auth/c01_0100.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C01_0100_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c01_0120_Auth",
          "OutputNames": [
             "text/auth/c01_0120.po"
@@ -9800,6 +10711,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C02_0010_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c02_0020_Auth",
+         "OutputNames": [
+            "text/auth/c02_0020.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C02_0020_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -10364,6 +11322,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C03_0080_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c03_0090_Auth",
+         "OutputNames": [
+            "text/auth/c03_0090.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C03_0090_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -11343,6 +12348,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c05_0040_Auth",
+         "OutputNames": [
+            "text/auth/c05_0040.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C05_0040_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c05_0050_Auth",
          "OutputNames": [
             "text/auth/c05_0050.po"
@@ -11398,6 +12450,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C05_0060_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c05_0080_Auth",
+         "OutputNames": [
+            "text/auth/c05_0080.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C05_0080_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -12001,6 +13100,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c07_0010_Auth",
+         "OutputNames": [
+            "text/auth/c07_0010.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C07_0010_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c07_0020_Auth",
          "OutputNames": [
             "text/auth/c07_0020.po"
@@ -12471,6 +13617,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c07_0120_Auth",
+         "OutputNames": [
+            "text/auth/c07_0120.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C07_0120_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c07_0130_Auth",
          "OutputNames": [
             "text/auth/c07_0130.po"
@@ -12479,6 +13672,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C07_0130_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c08_0010_Auth",
+         "OutputNames": [
+            "text/auth/c08_0010.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C08_0010_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -12894,6 +14134,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c08_0100_Auth",
+         "OutputNames": [
+            "text/auth/c08_0100.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C08_0100_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c08_0110_Auth",
          "OutputNames": [
             "text/auth/c08_0110.po"
@@ -13137,6 +14424,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C09_0050_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c09_0060_Auth",
+         "OutputNames": [
+            "text/auth/c09_0060.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C09_0060_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -13458,6 +14792,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c09_0110_Auth",
+         "OutputNames": [
+            "text/auth/c09_0110.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C09_0110_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c09_0120_Auth",
          "OutputNames": [
             "text/auth/c09_0120.po"
@@ -13505,6 +14886,100 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c10_0020_Auth",
+         "OutputNames": [
+            "text/auth/c10_0020.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C10_0020_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c10_0030_Auth",
+         "OutputNames": [
+            "text/auth/c10_0030.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C10_0030_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c10_0040_Auth",
          "OutputNames": [
             "text/auth/c10_0040.po"
@@ -13513,6 +14988,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C10_0040_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c10_0050_Auth",
+         "OutputNames": [
+            "text/auth/c10_0050.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C10_0050_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -13881,6 +15403,53 @@
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
       },
       {
+         "Id": "c10_0130_Auth",
+         "OutputNames": [
+            "text/auth/c10_0130.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C10_0130_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
          "Id": "c10_0140_Auth",
          "OutputNames": [
             "text/auth/c10_0140.po"
@@ -14077,6 +15646,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C11_0060_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c11_0070_Auth",
+         "OutputNames": [
+            "text/auth/c11_0070.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C11_0070_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -14453,6 +16069,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C12_0010_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c12_0020_Auth",
+         "OutputNames": [
+            "text/auth/c12_0020.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C12_0020_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [
@@ -15393,6 +17056,53 @@
             {
                "Name": "Auth.bin",
                "ContainerId": "C22_0010_cmn.par",
+               "Path": "Auth.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin.Translate"
+      },
+      {
+         "Id": "c22_0020_Auth",
+         "OutputNames": [
+            "text/auth/c22_0020.po"
+         ],
+         "Files": [
+            {
+               "Name": "Auth.bin",
+               "ContainerId": "C22_0020_cmn.par",
                "Path": "Auth.bin",
                "Checksum": 0,
                "Readers": [

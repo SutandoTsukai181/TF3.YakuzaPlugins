@@ -102,7 +102,11 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
             var nextNodeOffset = reader.ReadUInt32();
 
             if (nodeHeaderOffset != 0)
-                reader.Stream.RunInPosition(() => ReadNodeHeader(reader, nodeHeaderOffsets, nodeHeaders), nodeHeaderOffset);
+            {
+                reader.Stream.PushToPosition(nodeHeaderOffset);
+                while (ReadNodeHeader(reader, nodeHeaderOffsets, nodeHeaders));
+                reader.Stream.PopPosition();
+            }
 
             if (childNodeOffset != 0)
                 reader.Stream.RunInPosition(() => ReadNode(reader, nodeHeaderOffsets, nodeHeaders), childNodeOffset);
@@ -111,28 +115,18 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
                 reader.Stream.RunInPosition(() => ReadNode(reader, nodeHeaderOffsets, nodeHeaders), nextNodeOffset);
         }
 
-        private static void ReadNodeHeader(DataReader reader, List<uint> nodeHeaderOffsets, List<AuthNodeHeader> nodeHeaders)
+        private static bool ReadNodeHeader(DataReader reader, List<uint> nodeHeaderOffsets, List<AuthNodeHeader> nodeHeaders)
         {
             var nodeHeaderOffset = (uint)reader.Stream.Position;
 
             // There can be multiple references to a single node header
             if (nodeHeaderOffsets.Contains(nodeHeaderOffset))
-                return;
+                return false;
 
             var nodeHeader = reader.Read<AuthNodeHeader>() as AuthNodeHeader;
 
             switch (nodeHeader.NodeType)
             {
-                case AuthNodeType.GeneralNode:
-                    reader.Stream.Seek(0x08, SeekOrigin.Current);
-                    var nodeChildType = reader.ReadUInt32();
-
-                    if ((nodeChildType & 4) == 4)
-                    {
-                        reader.Stream.Seek(0x30, SeekOrigin.Current);
-                        ReadNodeHeader(reader, nodeHeaderOffsets, nodeHeaders);
-                    }
-                    break;
                 case AuthNodeType.SubtitleNode:
                     nodeHeaderOffsets.Add(nodeHeaderOffset);
                     nodeHeaders.Add(nodeHeader);
@@ -145,8 +139,11 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.AuthBin
                     }
                     break;
                 default:
+                    reader.Stream.Seek(nodeHeader.NodeDataSize, SeekOrigin.Current);
                     break;
             }
+
+            return nodeHeader.NodeType != AuthNodeType.EmptyNode;
         }
     }
 }

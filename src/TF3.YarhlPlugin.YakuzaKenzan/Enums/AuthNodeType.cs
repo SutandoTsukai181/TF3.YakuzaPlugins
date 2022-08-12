@@ -25,13 +25,13 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Enums
     public enum AuthNodeType
     {
         /// <summary>
+        /// Empty node that marks the end of an entry's nodes.
+        /// </summary>
+        EmptyNode = 0x00,
+
+        /// <summary>
         /// Node containing the start and end frames, and the subtitle text.
         /// </summary>
         SubtitleNode = 0x14,
-
-        /// <summary>
-        /// General node that contains other nodes.
-        /// </summary>
-        GeneralNode = 0x03F0,
     }
 }
