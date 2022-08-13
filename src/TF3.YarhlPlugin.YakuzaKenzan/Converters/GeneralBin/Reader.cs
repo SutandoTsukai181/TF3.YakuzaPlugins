@@ -99,6 +99,8 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin
                     ReadStructStringsMail(reader, structStrings, header);
                 else if (binType == typeof(MapTutorialBin))
                     ReadStructStringsMapTutorial(reader, structStrings, header);
+                else if (binType == typeof(RandomBattleBin))
+                    ReadStructStringsRandomBattle(reader, structStrings, header);
                 else
                     ReadStructStringsGeneral(reader, structStrings, header);
             }
@@ -194,6 +196,85 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin
                 }
 
                 reader.Stream.Seek(structStart + header.StructStride);
+            }
+        }
+
+        private void ReadStructStringsRandomBattle(DataReader reader, List<string> structStrings, dynamic header)
+        {
+            // This whole format is a mess to go through, so only the structs that have text are traversed here.
+            var binHeader = header as RandomBattleBin;
+
+            for (int i = 0; i < binHeader.StructCount1; i++)
+            {
+                reader.Stream.Seek(binHeader.StructStart1 + (i * 0x10));
+
+                switch (reader.ReadUInt32())
+                {
+                    case 0x02:
+                    case 0x03:
+                    case 0x04:
+                    case 0x07:
+                    case 0x14:
+                        ReadStringOffset(reader, structStrings);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            for (int i = 0; i < binHeader.StructCount2; i++)
+            {
+                reader.Stream.Seek(binHeader.StructStart2 + (i * 0x20) + 0x04);
+                ReadStringOffset(reader, structStrings);
+            }
+
+            reader.Stream.Seek(binHeader.StructStart3 + 0x10);
+
+            var structStart3 = reader.ReadUInt32();
+            var structCount3 = reader.ReadUInt32();
+
+            var structHeader3Start = reader.ReadUInt32();
+            var structHeader3End = reader.ReadUInt32();
+
+            var structHeader4Start = reader.ReadUInt32();
+
+            for (int i = 0; i < structCount3; i++)
+            {
+                reader.Stream.Seek(structStart3 + (i * 0x20));
+                ReadStringOffset(reader, structStrings);
+                ReadStringOffset(reader, structStrings);
+            }
+
+            reader.Stream.Seek(structHeader3Start + 0x04);
+            reader.Stream.Seek(reader.ReadUInt32());
+            while (reader.Stream.Position < structHeader3End)
+            {
+                ReadStringOffset(reader, structStrings);
+            }
+
+            reader.Stream.Seek(structHeader4Start);
+
+            var structStart4 = reader.ReadUInt32();
+            var structCount4 = reader.ReadUInt32();
+
+            for (int i = 0; i < structCount4; i++)
+            {
+                reader.Stream.Seek(structStart4 + (i * 0x10));
+
+                var structStart5 = reader.ReadUInt32();
+                var structCount5 = reader.ReadUInt32();
+
+                for (int j = 0; j < structCount5; j++)
+                {
+                    reader.Stream.Seek(structStart5 + (j * 0x30));
+                    ReadStringOffset(reader, structStrings);
+                    _ = reader.ReadUInt32();
+                    ReadStringOffset(reader, structStrings);
+                    ReadStringOffset(reader, structStrings);
+
+                    reader.Stream.Seek(0x10, SeekOrigin.Current);
+                    ReadStringOffset(reader, structStrings);
+                }
             }
         }
 

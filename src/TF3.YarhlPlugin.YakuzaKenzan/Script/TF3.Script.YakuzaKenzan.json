@@ -78,6 +78,13 @@
          }
       },
       {
+         "Id": "randomBattleBinParams",
+         "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.ReaderParameters, TF3.YarhlPlugin.YakuzaKenzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+         "Value": {
+            "BinTypeName": "TF3.YarhlPlugin.YakuzaKenzan.Types.GeneralBin.RandomBattleBin, TF3.YarhlPlugin.YakuzaKenzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null"
+         }
+      },
+      {
          "Id": "saleBinParams",
          "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.ReaderParameters, TF3.YarhlPlugin.YakuzaKenzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
          "Value": {
@@ -9837,6 +9844,49 @@
                   {
                      "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Reader",
                      "ParameterId": "mapTutorialBinParams"
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Writer",
+                     "ParameterId": ""
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Translate"
+      },
+      {
+         "Id": "random_battle.bin",
+         "OutputNames": [
+            "text/scenario/random_battle.po"
+         ],
+         "Files": [
+            {
+               "Name": "random_battle.bin",
+               "ContainerId": "root",
+               "Path": "PS3_GAME/USRDIR/bin/scenario/random_battle.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin.Reader",
+                     "ParameterId": "randomBattleBinParams"
                   }
                ],
                "Writers": [
