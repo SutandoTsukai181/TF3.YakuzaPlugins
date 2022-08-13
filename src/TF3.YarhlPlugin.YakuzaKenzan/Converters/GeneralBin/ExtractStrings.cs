@@ -63,8 +63,8 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin
             {
                 var entry = new PoEntry()
                 {
-                    Original = bin.HeaderStrings[i],
-                    Translated = bin.HeaderStrings[i],
+                    Original = bin.HeaderStrings[i].Replace("\r\n", "\n"),
+                    Translated = bin.HeaderStrings[i].Replace("\r\n", "\n"),
                     Context = $"header_{i}",
                 };
                 po.Add(entry);
@@ -74,8 +74,8 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin
             {
                 var entry = new PoEntry()
                 {
-                    Original = bin.StructStrings[i],
-                    Translated = bin.StructStrings[i],
+                    Original = bin.StructStrings[i].Replace("\r\n", "\n"),
+                    Translated = bin.StructStrings[i].Replace("\r\n", "\n"),
                     Context = $"struct_{i}",
                 };
                 po.Add(entry);

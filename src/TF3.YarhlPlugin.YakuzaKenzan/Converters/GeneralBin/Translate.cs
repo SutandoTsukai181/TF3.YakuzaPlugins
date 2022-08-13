@@ -73,11 +73,11 @@ namespace TF3.YarhlPlugin.YakuzaKenzan.Converters.GeneralBin
 
                 if (listName == "header")
                 {
-                    bin.HeaderStrings[index] = entry.Translated.Replace("\n", "\\n");
+                    bin.HeaderStrings[index] = entry.Translated.Replace("\n", "\r\n");
                 }
                 else if (listName == "struct")
                 {
-                    bin.StructStrings[index] = entry.Translated.Replace("\n", "\\n");
+                    bin.StructStrings[index] = entry.Translated.Replace("\n", "\r\n");
                 }
             }
         }
