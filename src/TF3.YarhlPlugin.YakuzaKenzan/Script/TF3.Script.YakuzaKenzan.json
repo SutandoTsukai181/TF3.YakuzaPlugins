@@ -24,7 +24,8 @@
          "Value": {
             "Version": 65537,
             "WriteDataSize": true,
-            "DotRoot": false
+            "DotRoot": false,
+            "SortWithUpperInvariant": true
          }
       },
       {
