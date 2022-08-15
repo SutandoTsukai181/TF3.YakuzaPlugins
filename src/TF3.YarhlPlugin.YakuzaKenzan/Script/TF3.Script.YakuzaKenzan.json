@@ -7361,6 +7361,44 @@
             }
          ],
          "Containers": []
+      },
+      {
+         "Id": "yactplaydata.par",
+         "Name": "yactplaydata.par",
+         "Path": "PS3_GAME/USRDIR/bin/yact/yactplaydata.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": []
+      },
+      {
+         "Id": "yactplaydata_taiken.par",
+         "Name": "yactplaydata_taiken.par",
+         "Path": "PS3_GAME/USRDIR/bin/yact/yactplaydata_taiken.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": []
       }
    ],
    "Assets": [
@@ -118500,6 +118538,100 @@
             }
          ],
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.MapCmn.Translate"
+      },
+      {
+         "Id": "yactplaydata.bin",
+         "OutputNames": [
+            "text/yact/yactplaydata.po"
+         ],
+         "Files": [
+            {
+               "Name": "yactplaydata.bin",
+               "ContainerId": "yactplaydata.par",
+               "Path": "yactplaydata.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.Translate"
+      },
+      {
+         "Id": "yactplaydata_taiken.bin",
+         "OutputNames": [
+            "text/yact/yactplaydata_taiken.po"
+         ],
+         "Files": [
+            {
+               "Name": "yactplaydata.bin",
+               "ContainerId": "yactplaydata_taiken.par",
+               "Path": "yactplaydata.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.YactPlayData.Translate"
       }
    ],
    "Patches": []
