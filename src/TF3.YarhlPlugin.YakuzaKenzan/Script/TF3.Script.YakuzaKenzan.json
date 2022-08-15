@@ -7285,6 +7285,25 @@
             }
          ],
          "Containers": []
+      },
+      {
+         "Id": "arms.par",
+         "Name": "arms.par",
+         "Path": "PS3_GAME/USRDIR/bin/armspar/arms.par",
+         "Checksum": 0,
+         "Readers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Reader",
+               "ParameterId": "parReaderParams"
+            }
+         ],
+         "Writers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Par.Writer",
+               "ParameterId": "parWriterParams"
+            }
+         ],
+         "Containers": []
       }
    ],
    "Assets": [
@@ -109504,6 +109523,53 @@
             }
          ],
          "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Y2007Bin.Translate"
+      },
+      {
+         "Id": "arms_param_ps3.bin",
+         "OutputNames": [
+            "text/arms/arms_param_ps3.po"
+         ],
+         "Files": [
+            {
+               "Name": "arms_param_ps3.bin",
+               "ContainerId": "arms.par",
+               "Path": "arms_param_ps3.bin",
+               "Checksum": 0,
+               "Readers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.ArmsParam.Reader",
+                     "ParameterId": ""
+                  }
+               ],
+               "Writers": [
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.ArmsParam.Writer",
+                     "ParameterId": ""
+                  },
+                  {
+                     "TypeName": "TF3.YarhlPlugin.YakuzaCommon.Converters.Sllz.Compress",
+                     "ParameterId": "compressorParams"
+                  }
+               ]
+            }
+         ],
+         "Extractors": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.ArmsParam.ExtractStrings",
+               "ParameterId": "poHeader"
+            },
+            {
+               "TypeName": "Yarhl.Media.Text.Po2Binary",
+               "ParameterId": ""
+            }
+         ],
+         "TranslationMergers": [
+            {
+               "TypeName": "TF3.YarhlPlugin.YakuzaKenzan.Converters.Po.Merger",
+               "ParameterId": ""
+            }
+         ],
+         "Translator": "TF3.YarhlPlugin.YakuzaKenzan.Converters.ArmsParam.Translate"
       }
    ],
    "Patches": []
